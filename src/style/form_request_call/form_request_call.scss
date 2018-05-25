@@ -1,0 +1,145 @@
+.wrapper_form{
+    position: relative;
+    width: 370px;
+    margin-left: 15px;
+
+    .container_form_request_call{
+        position: absolute;
+        top: 7.1em;
+        left: 0;
+        width: 100%;
+        padding: 3em 25px 25px 25px;
+        background-image: url(../../src/images/bg_form.jpg);
+        font-family: 'Roboto', 'sans-serif';
+
+        .container_arrow{
+            position: absolute;
+            top: 0;
+            right: 5%;
+            height: 35px;
+            background-color: $color-red;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            z-index: 1;
+
+            .content{
+                padding: 4px 10px;
+                @include header( $white-color, 20px, 600 );
+                display: inline-block;
+            }
+
+            .arrow{
+                position: absolute;
+                bottom: -100%;
+                left: 0px;
+                width: 100%;
+                z-index: -1;
+            }
+        }
+
+        .container_input{
+            display: block;
+            width: 100%;
+            margin: auto;
+
+        }
+
+        .user_info{
+            @include header( $black-color, 18px, 600 );
+        }
+
+        .input{
+            width: 100%;
+            font-size: 20px;
+            padding: 8px 10px;
+            border: 1px solid #e8e8e8;
+            background-color: #e8e8e8;
+            outline: red;
+            margin-bottom: 6px;
+            @include border_radius( 6px );
+            @include box_shadow( 5px, 10px, 7px, 0px, $light-grey-color );
+
+            &:focus{
+                border-color: $color-blue;
+            }
+        }
+
+        .some_text{
+            margin: 20px 0 20px 0;
+            background-color: $color-red;
+            padding: 25px 10px;
+            text-align: center;
+            @include border_radius( 6px );
+            letter-spacing: 1;
+            @include box_shadow( 3px, 3px, 15px, 0px, #860f1a );
+            @include header( $white-color, 22px, 600 );
+        }
+
+        .container_sales{
+            text-align: center;
+        }
+
+        .header_small{
+            @include header( $black-color, 20px, 600 );
+            margin-bottom: 10px;
+        }
+
+        .header_large{
+            @include header( $black-color, 35px, 800 );
+            margin-bottom: 20px;
+        }
+
+        .discount{
+            background-color: $golg-color;
+            padding: 6px 12px;
+            @include border_radius( 6px );
+            @include box_shadow( 7px, 6px, 15px, 4px, $light-grey-color );
+        }
+
+        .container_price{
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+
+            .container_old_price{
+                text-align: left;
+            }
+
+            .new_price{
+                @include header( $color-red, 48px, 900 );
+            }
+
+            .old_price{
+                @include header( $black-color, 22px, 900 );
+                position: relative;
+
+                &:before{
+                    content: '';
+                    width: 80%;
+                    height: 2px;
+                    position: absolute;
+                    top: 0;
+                    left: 5px;
+                    background-color: $color-red;
+                    -webkit-transform: rotate( -35deg );
+                        -ms-transform: rotate( -35deg );
+                            transform: rotate( -35deg );
+                }
+            }
+
+            .title{
+                @include header( $light-grey-color, 15px, 600 );
+            }
+        }
+    }
+}

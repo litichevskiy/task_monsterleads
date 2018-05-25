@@ -1,0 +1,10 @@
+.main_container{
+    width: 100%;
+    position: relative;
+    background-color: $blue-violet-color;
+
+    .wrapper_content_page{
+        max-width: $max-width-main-container;
+        margin: auto;
+    }
+}

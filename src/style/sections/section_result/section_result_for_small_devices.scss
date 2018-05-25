@@ -1,0 +1,121 @@
+@media (max-width: 1430px) {
+    .section_result{
+
+        .cell_img{
+            max-width: 120px;
+        }
+    }
+}
+
+@media (max-width: 1240px) {
+    .section_result{
+
+        .container_cell{
+
+            .content{
+                font-size: 16px;
+            }
+
+            .header_cell{
+                font-size :23px;
+            }
+
+            .cell_img{
+                max-width: 95px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .section_result{
+
+        .container_cell{
+            padding: 0 2em;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+
+            .content{
+                font-size: 16px;
+            }
+
+            .cell{
+                width: auto;
+                padding: 1em 0;
+
+                &:nth-child(1),
+                &:nth-child(3){
+                    -webkit-box-pack: start;
+                    -webkit-justify-content: flex-start;
+                        -ms-flex-pack: start;
+                            justify-content: flex-start;
+                }
+            }
+
+            .header_cell{
+                font-size :23px;
+            }
+
+            .cell_img{
+                max-width: 95px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .section_result{
+
+        .spot{
+            top: -80px;
+        }
+
+        .container_cell{
+            padding: 0 0.8em;
+
+            .cell{
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: reverse;
+                -webkit-flex-direction: column-reverse;
+                    -ms-flex-direction: column-reverse;
+                        flex-direction: column-reverse;
+
+                .header_cell{
+                    text-align: center;
+                }
+
+                .cell_img{
+                    margin: 10px 0 0 0;
+                }
+            }
+
+            .cell_img{
+                max-width: 70px;
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .section_result{
+
+        .header{
+            font-size: 25px;
+        }
+
+        .container_cell{
+            padding: 0 0.4em;
+
+            .cell{
+                margin-bottom: 0;
+
+                br{
+                    display: none;
+                }
+            }
+        }
+    }
+}

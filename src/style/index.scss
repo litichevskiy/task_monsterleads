@@ -1,0 +1,16 @@
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+@import 'default_classes';
+@import './nav_panel/nav_panel';
+@import './main_container/main_container';
+@import './sections/section_composition/section_composition';
+@import './sections/section_approved/section_approved';
+@import './sections/section_result/section_result';
+@import './form_request_call/form_request_call';
+/*small_devices*/
+@import './nav_panel/nav_panel_for_small_devices';
+@import './sections/section_result/section_result_for_small_devices';
+@import './sections/section_approved/section_approved_for_small_devices';
+@import './sections/section_composition/section_composition_for_small_devices';
+@import './form_request_call/form_request_call_for_small_devices';

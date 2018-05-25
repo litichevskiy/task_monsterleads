@@ -1,0 +1,22 @@
+@mixin header( $color, $font_size, $font_weight: initial ) {
+    color: $color;
+    font-size: $font_size;
+    font-weight: $font_weight;
+}
+
+@mixin content( $color, $font_size, $font_weight: initial, $line_height:ininitial ) {
+    color: $color;
+    font-size: $font_size;
+    font-weight: $font_weight;
+    line-height: $line_height;
+}
+
+@mixin border_radius( $radius ) {
+    -webkit-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin box_shadow( $x, $y, $radius, $tension, $color ) {
+    -webkit-box-shadow: $x $y $radius $tension $color;
+            box-shadow: $x $y $radius $tension $color;
+}
